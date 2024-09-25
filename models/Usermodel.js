@@ -1,7 +1,6 @@
 import { genSalt, hash } from "bcrypt";
 import mongoose from "mongoose";
 
-// Define User schema
 const userSchema = new mongoose.Schema({
   email: {
     type: String,
