@@ -28,28 +28,3 @@ export const verifyJwtToken = asyncHandler(async (req, _, next) => {
   }
 });
 
-// export const verifyJwtToken = (request, response, next) => {
-//   const token = request.cookies.jwt;
-//   if (!token) {
-//     return response.status(401).json({ error: "You are  not Authorised" });
-//   }
-//   try {
-//     const decoded = jwt.verify(
-//       token,
-//       process.env.JWT_KEY,
-//       async (err, payload) => {
-//         if (err) {
-//           return response.status(401).send("Token is not valid");
-
-//         }
-//        request.userId = payload.userId;
-//       next();
-//       }
-//     );
-//     request.user = decoded;
-//     next();
-//   } catch (error) {
-//     console.log(error);
-//     response.status(401).json({ error: "Invalid token" });
-//   }
-// };
