@@ -27,7 +27,7 @@ Setup
 
 1 Clone the repository
 
-git clone https://github.com/yourusername/mern-chat-app-backend.git
+git clone https://github.com/AmanKumar1411/cannect-server
 cd mern-chat-app-backend
 
 2 Install dependencies
